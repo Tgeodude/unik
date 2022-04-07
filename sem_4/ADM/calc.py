@@ -1,10 +1,12 @@
+# Щеглов Виктор БПИ-20-3
+
 def answer(numb, sys_numb):
 	if sys_numb == 10:
 		return numb
 	if sys_numb == 2:
-		return bin(numb)[2:]
+		return (bin(numb)[2:])
 	if sys_numb == 16:
-		return hex(numb)[2:]
+		return (hex(numb)[2:])
 
 
 def calc_ps(number, sys_number):
@@ -36,7 +38,7 @@ def calc():
 		calc_answer = (calc_ps(number1, sys_number1) * calc_ps(number2, sys_number2))
 	elif sign == "/":
 		calc_answer = (calc_ps(number1, sys_number1) / calc_ps(number2, sys_number2))
-	print(answer(calc_answer, sys_answer))
+	print(answer((int (calc_answer)), sys_answer))
 flag = 1
 while (flag):
 	calc()
