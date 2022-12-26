@@ -15,10 +15,9 @@ int main(void)
             arr.push_back(0);
         else if (value[i] == '1')
             arr.push_back(1);
-
-        std::cout << arr[i]; 
     }
     std::cout << std::endl;
+    std::cout << "Ваша строка после кодирования" << std::endl;
     for (size_t i = 0; i < value.size() + 4; i++)
     {
         if (i == 0)
@@ -32,25 +31,14 @@ int main(void)
         std::cout << arr[i]; 
     }
     std::cout << std::endl;
+    std::cout << std::endl;
     arr.erase(arr.cbegin() + 7);
     arr.erase(arr.cbegin() + 3);
     arr.erase(arr.cbegin() + 1);
     arr.erase(arr.cbegin() + 0);
+    std::cout << "Ваша строка после декодирования" << std::endl;
     for (size_t i = 0; i < value.size(); i++)
     {
         std::cout << arr[i]; 
     }
 }
-    
-
-    // std::vector <int> arr;
-
-    // arr.push_back(0);
-    // arr.push_back(1);
-    // arr.push_back(2);
-    // arr.insert(arr.cbegin() + 2, 0);
-
-    // for (size_t i = 0; i < arr.size(); i++)
-    // {
-    //     std::cout << arr[i] << std::endl;
-    // }
